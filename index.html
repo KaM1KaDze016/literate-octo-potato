@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stars in Graz</title>
+</head>
+
+<body>
+    <nav id="navigation">
+        <ul
+            style="display: flex; justify-content: center; gap: 50px; list-style-type: none; padding: 30px; background-color: #333; color: white;   position: -webkit-sticky;position: sticky; top: 0;">
+            <li><a href="#landing" style="color: white; text-decoration: none;">Главная</a></li>
+            <li><a href="#schedule" style="color: white; text-decoration: none;">Расписание концертов</a></li>
+            <li><a href="#tickets" style="color: white; text-decoration: none;">Купить билеты</a></li>
+            <li><a href="#reviews" style="color: white; text-decoration: none;">Отзывы</a></li>
+            <li><a href="#faq" style="color: white; text-decoration: none;">Часто задаваемые вопросы</a></li>
+        </ul>
+    </nav>
+    <!-- MVP – Итерация 1 -->
+    <section id="landing">
+        <div
+            style="height: 60vh; width: 55vh; display: flex; justify-content: center; align-items: center; text-align: center; background-image: url('ff.png'); background-size: cover; background-position: center; border-radius: 50px;">
+            <div>
+                <h1>Stars in Graz</h1>
+                <p>30.11.2021</p>
+                <p>Messe Congress Graz</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MMP – Итерация 2 -->
+
+    <section id="schedule" style="padding: 20px;">
+        <h2 style="text-align: left;">Расписание концертов</h2>
+        <div class="concerts-container">
+            <div class="concert-card">
+                <img src="ff.jpg" alt="Артист 1" class="concert-image">
+                <h3 class="artist-name">Nautilus pompilius</h3>
+                <p class="concert-date">Дата: 01.10.2024</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="concert-card">
+                <img src="ii.jpg" alt="Артист 2" class="concert-image">
+                <h3 class="artist-name">Кино</h3>
+                <p class="concert-date">Дата: 05.10.2024</p>
+                <button class="add-button">+</button>
+            </div>
+            <div class="concert-card">
+                <img src="gg.jpg" alt="Артист 3" class="concert-image">
+                <h3 class="artist-name">Дос Мукасан</h3>
+                <p class="concert-date">Дата: 10.10.2024</p>
+                <button class="add-button">+</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="tickets" style="padding: 50px; text-align: center;">
+        <h2>Купить билеты</h2>
+
+        <!-- Форма покупки билета -->
+        <div class="form-container">
+            <form style="max-width: 400px; margin: 0 auto; text-align: left;">
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display: block; font-weight: bold;">Имя:</label>
+                    <input type="text" id="name" name="name" required
+                        style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="phone" style="display: block; font-weight: bold;">Номер телефона:</label>
+                    <input type="tel" id="phone" name="phone" required
+                        style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="email" style="display: block; font-weight: bold;">Почта:</label>
+                    <input type="email" id="email" name="email" required
+                        style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <!-- Кнопка покупки билета -->
+                <button type="submit">Купить билет</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="reviews" style="padding: 50px; text-align: center;">
+        <h2>Отзывы</h2>
+
+        <!-- Отзыв 1 -->
+        <div class="review">
+            <img src="Petrov.jpg" alt="Иван Иванов" class="review-photo">
+            <blockquote>
+                <p class="review-text">"Концерт был просто огонь! Начиная с первых аккордов и до самого конца я не мог
+                    оторвать глаз от сцены. Энергия, которая исходила от музыкантов, была невероятной. Особо порадовало
+                    то, что звук был идеально настроен — никакой какофонии, всё чётко и слаженно. Ещё хочу отметить
+                    работу светотехников: световое шоу было на высоте, оно добавляло атмосферности каждому треку.
+                    Чувствовалось, что артисты отдаются на 100%, и публика отвечала им взаимностью. После концерта вышел
+                    с таким зарядом энергии, что до сих пор не отпускает. Настоящий праздник для души!"</p>
+                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+
+        <!-- Отзыв 2 -->
+        <div class="review">
+            <img src="anna.jpg" alt="Анна Смирнова" class="review-photo">
+            <blockquote>
+                <p class="review-text">"Концерт превзошёл все мои ожидания! Я давно хотела побывать на выступлении этой
+                    группы, и они не разочаровали. Всё было продумано до мелочей: от костюмов до визуальных эффектов.
+                    Музыка была настолько проникновенной, что временами я забывала обо всём вокруг и просто погружалась
+                    в звуки и эмоции. Мне понравилось, как артисты общались с залом, создавая тёплую и уютную атмосферу,
+                    как будто мы все старые друзья. Концерт был идеальным — от начала и до последней ноты. Не терпится
+                    снова увидеть их на сцене!"</p>
+                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+
+        <!-- Отзыв 3 -->
+        <div class="review">
+            <img src="adlet.jpg" alt="Олег Петров" class="review-photo">
+            <blockquote>
+                <p class="review-text">"Недавно побывал на концерте и остался под впечатлением! Атмосфера была просто
+                    волшебной — сцена, свет, звук, всё было на высшем уровне. Я был в восторге от живого исполнения,
+                    которое значительно отличается от записи в студии. Каждая песня пробирала до мурашек, а когда зал
+                    начал подпевать, эмоции зашкаливали. Артисты общались с публикой, создавая ощущение, что мы все
+                    находимся в одном большом музыкальном путешествии. Этот вечер останется в памяти надолго.
+                    Обязательно пойду на их следующий концерт!"</p>
+                <span class="read-more">Читать полностью</span>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="faq" style="padding: 50px; text-align: center;">
+        <h2>Часто задаваемые вопросы</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Когда состоится следующий концерт?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Следующий концерт состоится 30.11.2021.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Как купить билеты?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Используйте кнопку "Купить билеты" на этой странице.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Можно ли вернуть билеты?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Да, вы можете вернуть билеты за 24 часа до начала концерта.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Есть ли возрастные ограничения?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Да, концерт доступен для зрителей старше 12 лет.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const concertsContainer = document.querySelector('.concerts-container');
+        const concertCards = document.querySelectorAll('.concert-card');
+
+        let currentIndex = 0;
+
+        function updateConcerts() {
+            concertCards.forEach((card, index) => {
+                card.style.display = (index >= currentIndex && index < currentIndex + 3) ? 'block' : 'none';
+            });
+        }
+
+  
+
+        // Инициализируем отображение
+        updateConcerts();
+
+        // Ограничение ввода в поле имени
+        document.getElementById('name').addEventListener('input', function (e) {
+            this.value = this.value.replace(/[^a-zA-ZА-Яа-яЁё\s]/g, '');
+        });
+
+        // Ограничение ввода в поле телефона
+        document.getElementById('phone').addEventListener('input', function (e) {
+            this.value = this.value.replace(/[^0-9\+\s\-]/g, '');
+        });
+
+        document.querySelectorAll('#reviews blockquote').forEach(function (blockquote) {
+            blockquote.addEventListener('click', function () {
+                blockquote.classList.toggle('expanded');
+                let readMore = blockquote.querySelector('.read-more');
+                if (blockquote.classList.contains('expanded')) {
+                    readMore.textContent = 'Свернуть';
+                } else {
+                    readMore.textContent = 'Читать полностью';
+                }
+            });
+        });
+
+        document.querySelectorAll('.faq-item').forEach(function (item) {
+            item.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
